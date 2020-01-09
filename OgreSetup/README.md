@@ -19,9 +19,13 @@ Some dependencies might change, if you have any errors while installing dependen
 1. Make directory for Ogre v1.9 download and navigate to directory
 2. Download Ogre v1.9 from Ogre Bit Bucket
 ```
-mkdir ~/Downloads/Ogre-v1-9 && cd ~/Downloads/Ogre-v1-9
-    
-hg clone https://bitbucket.org/sinbad/ogre/src/v1-9/ && cd v1-9
+cd ~/Downloads
+
+hg clone https://bitbucket.org/sinbad/ogre/
+
+cd ogre
+
+hg update v1-9
 ```
 3. Make build directory and move into it, stage the installation with cmake
 ```
@@ -59,7 +63,7 @@ cd bin
 
     cd ~/Downloads
     
-    sudo rm -rf Ogre-v1-9
+    sudo rm -rf ogre
 
 # Installing Latest Eclipse IDE with C/C++ Package
 
